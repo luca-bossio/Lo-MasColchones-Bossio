@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div>
+            <img src="../images/logo-lomascolchoneria.png" alt="DW">
+        </div>
+        <nav>
+            <ul class="lista">
+                <li class="menu"> <a href="../index.html">Inicio</a> </li>
+                <li class="menu"> <a href="./marcas.html">Marcas y modelos</a> </li>
+                <li class="menu"> <a href="./tienda.html">Tienda</a></li>
+                <li class="menu"> <a href="./contacto.html">Contacto</a></li>
+                <li class="menu"> <a href="./redes.html">Redes</a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="main">
+        <div>
+            <h2 class="titulo">Compra</h2>
+        </div>
+
+        <form action="enviar.php" method="get" enctype="text/plain" class="tienda">
+
+            <div>
+                <select name="colchon" id="colchon">
+                    <option value="01">Suavestar</option>
+                    <option value="02">Cannon</option>
+                    <option value="03">Piero</option>
+                    <option value="04">Kavanagh</option>
+                    <option value="05">Simmons</option>
+                </select>
+
+            </div>
+
+
+
+            <div>
+                <select name="colchon" id="colchon">
+                    <option value="01">Modelo</option>
+                    <option value="02">Modelo</option>
+                    <option value="03">Modelo</option>
+                    <option value="04">Modelo</option>
+                    <option value="05">Modelo</option>
+                </select>
+
+            </div>
+
+
+
+            <div>
+                <label for="medida">Medida del Colchon</label>
+                <input type="text" id="medida" placeholder="Medida del colchon">
+            </div>
+
+
+
+            <div>
+                <select name="base" id="base">
+                    <option value="01">Modelo de la base</option>
+                    <option value="02">Modelo de la base</option>
+                    <option value="03">Modelo de la base</option>
+                    <option value="04">Modelo de la base</option>
+                    <option value="05">Modelo de la base</option>
+                </select>
+
+            </div>
+
+
+
+            <div>
+                <label for="medidaBase">Medida de la base del colchon</label>
+                <input type="text" id="medidaBase" placeholder="Medida de la base del colchon">
+            </div>
+
+
+            <div>
+                <textarea name="comentariosCompra" id="comentariosCompra" cols="30" rows="10"
+                    placeholder=" Aclaraciones"></textarea>
+            </div>
+
+
+
+            <div>
+                <input type="submit" value="Finalizar compra">
+                <input type="submit" value="Seguir comprando">
+            </div>
+
+        </form>
+    </div>
+
+    <footer id="pie">
+        <p> Contactanos por nuestras redes o por nuestro telefono!</p>
+        <ul>
+            <li> <a target="_blank" href="https://www.instagram.com/lomas_colchoneria/">Instagram</a> </li>
+            <li> <a target="_blank" href="https://www.facebook.com/Lo-Mas-Colchoneria-1372863349456536/">Facebook</a>
+            </li>
+            <li> Telefono: +54 9 1130284573</li>
+
+        </ul>
+    </footer>
+
+
+
+
+</body>
+
+</html>
