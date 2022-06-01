@@ -76,7 +76,7 @@ header div img {
 .imagen {
     margin: 20px;
     align-items: center;
-    width: 100%;
+    width: 50%;
 }
 
 .menu a {
@@ -99,7 +99,7 @@ header div img {
 .main {
     display: flex;
     flex-direction: column;
-    padding-bottom: 400px;
+    /* padding-bottom: 400px; */
     text-align: center;
     grid-area: main;
 }
@@ -122,11 +122,10 @@ footer {
 
 
 form div {
-    margin: 20px;
-    margin-bottom: 5px;
+    margin: 10px;
 }
 
-form textarea {
+form div textarea {
     margin-left: 5px;
     margin-bottom: 5px;
 }
@@ -142,15 +141,25 @@ form textarea {
 
 .main h3 {
     text-decoration: underline;
+    font-size: 20px;
 }
 
 .tienda {
-    text-align: left;
+    margin: 10px;
+    margin-bottom: 5px;
 }
 
 
-.tabla {
-    border-spacing: 2px;
+
+.Tabla {
+    border-spacing: 2px solid black;
+    border: 3px solid black;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.filas {
     border: 3px solid black;
 }
 
@@ -174,14 +183,13 @@ form textarea {
     background-color: white;
 }
 
-.redes {
-    width: 2%;
-}
 
 .redesSociales {
     text-align: left;
     padding: 20px;
 }
+
+
 
 .lolo {
     display: flex;
