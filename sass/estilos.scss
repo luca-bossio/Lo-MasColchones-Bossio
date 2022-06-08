@@ -25,9 +25,7 @@
         .container {
 
             .lista {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
+                
                 margin-top: 30px;
                 padding: 30px;
                 font-family: $fontPrincipal;
@@ -60,12 +58,19 @@
         grid-area: main;
 
         .titulo {
-            text-align: left;
+            text-align: center;
             padding-top: 20px;
             margin-left: 20px;
             font-family: $fontPrincipal;
             text-decoration: underline;
             color: $colorTitulo;
+        }
+
+        .texto {
+            text-align: center;
+            font-family: $fontPrincipal;
+            color: $colorTitulo;
+            font-size: 20px;
         }
 
         .container {
@@ -94,7 +99,7 @@
     }
 }
 
-@media screen and (max-width: $tamanoTablet) {
+@media (max-width: $tamanoTablet) {
    
     nav {
 
@@ -106,15 +111,16 @@
 
 
             .lista {
-                align-items: center;
-
-
-                .menu {
-
+                display: flex;
+                justify-content: space-around;
+                
+                 .menu {
+                    display: flex;
+                    justify-content: space-around;
                     display: flex;
                     padding: 2px;
-                    margin: 30px;
-                    font-size: 20px;
+                    margin: 5px;
+                    font-size: 25px;
                 }
             }
         }
@@ -125,8 +131,14 @@
         padding-bottom: 200px;
 
         .titulo {
-            font-size: 25px;
-            margin-left: 10px;
+            font-size: 40px;
+            margin-left: 5px;
+        }
+        .texto {
+            text-align: center;
+            font-family: $fontPrincipal;
+            color: $colorTitulo;
+            font-size: 5px;
         }
 
         .container {
@@ -150,7 +162,7 @@
 
 }
 
-@media screen and (max-width: $tamanoMobile ) {
+@media (max-width: $tamanoMobile ) {
     nav {
 
         & &__img {
@@ -164,14 +176,16 @@
         .container {
 
             .lista {
+                display: flex;
                 flex-direction: column;
                 align-items: left;
 
                 .menu {   
+                    justify-content: space-around;
                     flex-direction: column;
-                    padding: 2px;
-                    margin: 30px;
-                    font-size: 30px;
+                    padding: 0px;
+                    margin: 0px;
+                    font-size: 15px;
                 }
             }
         }
@@ -183,6 +197,12 @@
         .titulo {
             font-size: 30px;
             margin-left: 5px;
+        }
+        .texto {
+            text-align: center;
+            font-family: $fontPrincipal;
+            color: $colorTitulo;
+            font-size: 10px;
         }
 
         .container {
