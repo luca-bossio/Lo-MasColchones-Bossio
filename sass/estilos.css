@@ -118,26 +118,6 @@
   background-color: #4444bd;
 }
 
-.grid-area .main .grid-area .main__section .Tabla {
-  border-spacing: 2px solid black;
-  border: 3px solid black;
-  background-color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-}
-
-.grid-area .main .grid-area .main__section .Tabla .tabla tr td {
-  border: 2px solid black;
-  padding: 3px;
-  background-color: white;
-}
-
-.grid-area .main .grid-area .main__section .Tabla .tabla tr th {
-  border: 2px solid black;
-  padding: 3px;
-  background-color: white;
-}
-
 .grid-area .main .lolo {
   display: -webkit-box;
   display: -ms-flexbox;
