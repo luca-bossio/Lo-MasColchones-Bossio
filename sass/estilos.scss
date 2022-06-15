@@ -111,229 +111,253 @@
             color: black;
             background-color: rgb(68, 68, 189);
 
-            // .Tabla {
-            //     border-spacing: 2px solid black;
-            //     border: 3px solid black;
-            //     background-color: white;
-            //     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            //     font-size: 20px;
+            & &__table {
+                border-spacing: 2px solid black;
+                border: 3px solid black;
+                background-color: white;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
 
-            //     // .tabla tr td {
-            //     //     border: 2px solid black;
-            //     //     padding: 3px;
-            //     //     background-color: white;
-            //     // }
+                & &__tbody {
+                    & &__tr {
+                        & &__td {
+                            border: 2px solid black;
+                            padding: 3px;
+                            background-color: white;
+                        }
 
-            //     // .tabla tr th {
-            //     //     border: 2px solid black;
-            //     //     padding: 3px;
-            //     //     background-color: white;
-            //     // }
-            // }
-        }
-
-        .lolo {
-            display: flex;
-
-            .redesSociales {
-                text-align: left;
-                padding: 20px;
-            }
-        }
-
-        form {
-            & &__div {
-                margin: 10px;
-
-                & &__textarea {
-                    margin-left: 5px;
-                    margin-bottom: 5px;
+                        & &__th {
+                            border: 2px solid black;
+                            padding: 3px;
+                            background-color: white;
+                        }
+                    }
                 }
-            }
 
-            .aclaraciones {
-                margin: 20px;
-                margin-bottom: 5px;
-            }
+                & &__thead {
+                    & &__tr {
+                        & &__th {
+                            border: 2px solid black;
+                            padding: 3px;
+                            background-color: white;
+                        }
+                    }
+                }
 
+            }
         }
 
-    }
-
-    #pie {
-        margin-top: 0px;
-        text-align: left;
-        background: $colorPiedepagina;
-        border-top: $bordePrincipal;
-        grid-area: footer;
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-    }
-
-    .tienda {
-        margin: 10px;
-        margin-bottom: 5px;
-    }
-}
-
-@media (max-width: $tamanoTablet) {
-
-    nav {
-
-        & &__img {
-            width: 40%;
-        }
-
-        .container {
-
-
-            .lista {
+            .lolo {
                 display: flex;
-                justify-content: space-around;
 
-                .menu {
-                    display: flex;
-                    justify-content: space-around;
-                    display: flex;
-                    padding: 2px;
-                    margin: 5px;
-                    font-size: 25px;
-                }
-            }
-        }
-    }
-
-
-    .main {
-        padding-bottom: 200px;
-
-        .titulo {
-            font-size: 40px;
-            margin-left: 5px;
-        }
-
-        .texto {
-            text-align: center;
-            font-family: $fontPrincipal;
-            color: $colorTitulo;
-            font-size: 5px;
-        }
-
-        .container {
-
-            .carousel slide {
-
-                .imagen {
-                    margin: auto;
-                    width: 100%;
+                .redesSociales {
+                    text-align: left;
                     padding: 20px;
                 }
             }
 
+            form {
+                & &__div {
+                    margin: 10px;
 
-        }
-
-        .lolo {
-            .redesSociales {
-                & &__li {
-                    font-size: 20px;
-
-                    & &__img {
-                        width: 5%;
+                    & &__textarea {
+                        margin-left: 5px;
+                        margin-bottom: 5px;
                     }
                 }
-            }
 
-        }
-    }
-
-    #pie {
-        font-size: 15px;
-    }
-
-}
-
-@media (max-width: $tamanoMobile ) {
-    nav {
-
-        & &__img {
-            width: 100%;
-        }
-
-        & &__div img {
-            width: 50%;
-        }
-
-        .container {
-
-            .lista {
-                display: flex;
-                flex-direction: column;
-                align-items: left;
-
-                .menu {
-                    justify-content: space-around;
-                    flex-direction: column;
-                    padding: 0px;
-                    margin: 0px;
-                    font-size: 15px;
+                .aclaraciones {
+                    margin: 20px;
+                    margin-bottom: 5px;
                 }
+
+            }
+
+        }
+
+        #pie {
+            margin-top: 0px;
+            text-align: left;
+            background: $colorPiedepagina;
+            border-top: $bordePrincipal;
+            grid-area: footer;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+        }
+
+        .tienda {
+            margin: 10px;
+            margin-bottom: 5px;
+
+            .titulo {
+                text-align: left;
+                padding-top: 20px;
+                margin-left: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-decoration: underline;
+                color: rgb(68, 68, 189);
             }
         }
     }
 
-    .main {
-        padding-bottom: 100px;
+    @media (max-width: $tamanoTablet) {
 
-        .titulo {
-            font-size: 30px;
-            margin-left: 5px;
-        }
+        nav {
 
-        .texto {
-            text-align: center;
-            font-family: $fontPrincipal;
-            color: $colorTitulo;
-            font-size: 10px;
-        }
+            & &__img {
+                width: 40%;
+            }
 
-        .container {
-
-            .carousel slide {
+            .container {
 
 
-                .imagen {
+                .lista {
                     display: flex;
-                    width: 90%;
-                    align-items: center;
-                    padding-top: 20px;
-                    margin: 5px;
+                    justify-content: space-around;
+
+                    .menu {
+                        display: flex;
+                        justify-content: space-around;
+                        display: flex;
+                        padding: 2px;
+                        margin: 5px;
+                        font-size: 25px;
+                    }
                 }
             }
         }
 
-        .subtitulo {
-            padding-top: 10px;
+
+        .main {
+            padding-bottom: 200px;
+
+            .titulo {
+                font-size: 40px;
+                margin-left: 5px;
+            }
+
+            .texto {
+                text-align: center;
+                font-family: $fontPrincipal;
+                color: $colorTitulo;
+                font-size: 5px;
+            }
+
+            .container {
+
+                .carousel slide {
+
+                    .imagen {
+                        margin: auto;
+                        width: 100%;
+                        padding: 20px;
+                    }
+                }
+
+
+            }
+
+            .lolo {
+                .redesSociales {
+                    & &__li {
+                        font-size: 20px;
+
+                        & &__img {
+                            width: 5%;
+                        }
+                    }
+                }
+
+            }
         }
 
-        .lolo {
-            .redesSociales {
-                & &__li {
-                    font-size: 25px;
+        #pie {
+            font-size: 15px;
+        }
 
-                    & &__img {
-                        width: 10%;
+    }
+
+    @media (max-width: $tamanoMobile ) {
+        nav {
+
+            & &__img {
+                width: 100%;
+            }
+
+            & &__div img {
+                width: 50%;
+            }
+
+            .container {
+
+                .lista {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: left;
+
+                    .menu {
+                        justify-content: space-around;
+                        flex-direction: column;
+                        padding: 0px;
+                        margin: 0px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        .main {
+            padding-bottom: 100px;
+
+            .titulo {
+                font-size: 30px;
+                margin-left: 5px;
+            }
+
+            .texto {
+                text-align: center;
+                font-family: $fontPrincipal;
+                color: $colorTitulo;
+                font-size: 10px;
+            }
+
+            .container {
+
+                .carousel slide {
+
+
+                    .imagen {
+                        display: flex;
+                        width: 90%;
+                        align-items: center;
+                        padding-top: 20px;
+                        margin: 5px;
                     }
                 }
             }
 
+            .subtitulo {
+                padding-top: 10px;
+            }
+
+            .lolo {
+                .redesSociales {
+                    & &__li {
+                        font-size: 25px;
+
+                        & &__img {
+                            width: 10%;
+                        }
+                    }
+                }
+
+            }
+
         }
 
-    }
 
-
-    #pie {
-        align-items: center;
+        #pie {
+            align-items: center;
+        }
     }
-}

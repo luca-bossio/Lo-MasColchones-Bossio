@@ -118,6 +118,32 @@
   background-color: #4444bd;
 }
 
+.grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table {
+  border-spacing: 2px solid black;
+  border: 3px solid black;
+  background-color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+.grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__tbody .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__tbody__tr .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__tbody .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__tbody__tr__td {
+  border: 2px solid black;
+  padding: 3px;
+  background-color: white;
+}
+
+.grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__tbody .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__tbody__tr .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__tbody .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__tbody__tr__th {
+  border: 2px solid black;
+  padding: 3px;
+  background-color: white;
+}
+
+.grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__thead .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__thead__tr .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__thead .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__thead__tr__th {
+  border: 2px solid black;
+  padding: 3px;
+  background-color: white;
+}
+
 .grid-area .main .lolo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,6 +194,15 @@
 .grid-area .tienda {
   margin: 10px;
   margin-bottom: 5px;
+}
+
+.grid-area .tienda .titulo {
+  text-align: left;
+  padding-top: 20px;
+  margin-left: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: underline;
+  color: #4444bd;
 }
 
 @media (max-width: 1028px) {
