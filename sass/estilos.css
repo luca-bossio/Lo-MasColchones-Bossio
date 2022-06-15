@@ -70,11 +70,20 @@
   grid-area: main;
 }
 
-.grid-area .main .titulo {
+.grid-area .main .tituloPrincipal {
   text-align: center;
   padding-top: 20px;
   margin-left: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: underline;
+  color: #4444bd;
+}
+
+.grid-area .main .titulo {
+  text-align: left;
+  padding-top: 20px;
+  margin-left: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-decoration: underline;
   color: #4444bd;
 }
