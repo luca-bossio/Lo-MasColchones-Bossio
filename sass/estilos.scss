@@ -25,7 +25,7 @@
         .container {
 
             .lista {
-                
+
                 margin-top: 30px;
                 padding: 30px;
                 font-family: $fontPrincipal;
@@ -85,6 +85,70 @@
                 }
             }
         }
+
+        & &__h2 {
+            text-decoration: underline;
+        }
+
+        & &__h3 {
+            text-decoration: underline;
+            font-size: 20px;
+        }
+
+        & &__section {
+            text-align: center;
+            display: table;
+            margin: 5px auto;
+            color: black;
+            background-color: rgb(68, 68, 189);
+
+            .Tabla {
+                border-spacing: 2px solid black;
+                border: 3px solid black;
+                background-color: white;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+
+                .tabla tr td {
+                    border: 2px solid black;
+                    padding: 3px;
+                    background-color: white;
+                }
+
+                .tabla tr th {
+                    border: 2px solid black;
+                    padding: 3px;
+                    background-color: white;
+                }
+            }
+        }
+
+        .lolo {
+            display: flex;
+
+            .redesSociales {
+                text-align: left;
+                padding: 20px;
+            }
+        }
+
+        form {
+            & &__div {
+                margin: 10px;
+
+                & &__textarea {
+                    margin-left: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+
+            .aclaraciones {
+                margin: 20px;
+                margin-bottom: 5px;
+            }
+
+        }
+
     }
 
     #pie {
@@ -97,10 +161,15 @@
         flex-direction: column;
         align-items: left;
     }
+
+    .tienda {
+        margin: 10px;
+        margin-bottom: 5px;
+    }
 }
 
 @media (max-width: $tamanoTablet) {
-   
+
     nav {
 
         & &__img {
@@ -113,8 +182,8 @@
             .lista {
                 display: flex;
                 justify-content: space-around;
-                
-                 .menu {
+
+                .menu {
                     display: flex;
                     justify-content: space-around;
                     display: flex;
@@ -134,6 +203,7 @@
             font-size: 40px;
             margin-left: 5px;
         }
+
         .texto {
             text-align: center;
             font-family: $fontPrincipal;
@@ -152,6 +222,19 @@
                 }
             }
 
+
+        }
+
+        .lolo {
+            .redesSociales {
+                & &__li {
+                    font-size: 20px;
+
+                    & &__img {
+                        width: 5%;
+                    }
+                }
+            }
 
         }
     }
@@ -180,7 +263,7 @@
                 flex-direction: column;
                 align-items: left;
 
-                .menu {   
+                .menu {
                     justify-content: space-around;
                     flex-direction: column;
                     padding: 0px;
@@ -198,6 +281,7 @@
             font-size: 30px;
             margin-left: 5px;
         }
+
         .texto {
             text-align: center;
             font-family: $fontPrincipal;
@@ -219,6 +303,24 @@
                 }
             }
         }
+
+        .subtitulo {
+            padding-top: 10px;
+        }
+
+        .lolo {
+            .redesSociales {
+                & &__li {
+                    font-size: 25px;
+
+                    & &__img {
+                        width: 10%;
+                    }
+                }
+            }
+
+        }
+
     }
 
 
