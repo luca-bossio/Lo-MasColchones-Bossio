@@ -6,15 +6,6 @@ $estilos: (
   flex:flex,
 );
 
-div {
-  background-color: map-get($estilos, color);
-  text-align: map-get($estilos, centro);
-  align-items: map-get($estilos, centro);
-  padding:map-get($estilos, 1rem);
-  font-size:map-get($estilos, tFuente);
-  display:map-get( $estilos,flex)
-}
-
 
 * {
     padding: 0;
