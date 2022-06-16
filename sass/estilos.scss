@@ -1,5 +1,21 @@
 @import "import";
 
+$estilos: (
+  centro: center,
+  izquierda: left,
+  flex:flex,
+);
+
+div {
+  background-color: map-get($estilos, color);
+  text-align: map-get($estilos, centro);
+  align-items: map-get($estilos, centro);
+  padding:map-get($estilos, 1rem);
+  font-size:map-get($estilos, tFuente);
+  display:map-get( $estilos,flex)
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -17,9 +33,13 @@
     grid-row-gap: 10px;
     grid-column-gap: 10px;
 
-    nav {
+    @mixin navegador {
         background: $colorNav;
         border-bottom: $bordePrincipal;
+    }
+
+    nav {
+        @include navegador;
         grid-area: header;
 
         .container {
@@ -33,7 +53,7 @@
                 list-style: none;
 
                 .menu {
-                    display: flex;
+                    display:map-get( $estilos,flex);
                     flex-direction: row;
                     margin: 20px;
                     border: $bordePrincipal;
@@ -52,13 +72,13 @@
     }
 
     .main {
-        display: flex;
+        display:map-get( $estilos,flex);
         flex-direction: column;
-        text-align: center;
+        text-align: map-get($estilos, centro);
         grid-area: main;
 
         .tituloPrincipal {
-            text-align: center;
+            text-align: map-get($estilos, centro);
             padding-top: 20px;
             margin-left: 20px;
             font-family: $fontPrincipal;
@@ -67,19 +87,15 @@
         }
 
         .titulo {
-            text-align: left;
-            padding-top: 20px;
-            margin-left: 20px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            text-decoration: underline;
-            color: rgb(68, 68, 189);
+            @extend .tituloPrincipal;
+            text-align: map-get($estilos, izquierda);         
         }
 
         .texto {
-            text-align: center;
-            font-family: $fontPrincipal;
-            color: $colorTitulo;
-            font-size: 20px;
+            @extend .tituloPrincipal;
+            padding-top: none;
+            margin-left: none;
+            text-decoration: none;
         }
 
         .container {
@@ -100,58 +116,33 @@
         }
 
         & &__h3 {
-            text-decoration: underline;
+            @extend &__h2;
             font-size: 20px;
         }
 
         & &__section {
-            text-align: center;
+            text-align: map-get($estilos, centro);
             display: table;
             margin: 5px auto;
             color: black;
-            background-color: rgb(68, 68, 189);
+            background-color: $colorTitulo;
 
-            & &__table {
-                border-spacing: 2px solid black;
-                border: 3px solid black;
-                background-color: white;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-size: 20px;
-
-                & &__tbody {
-                    & &__tr {
-                        & &__td {
-                            border: 2px solid black;
-                            padding: 3px;
-                            background-color: white;
-                        }
-
-                        & &__th {
-                            border: 2px solid black;
-                            padding: 3px;
-                            background-color: white;
-                        }
-                    }
+             & &__table {
+                    border-spacing:$bordePrincipal;
+                    border: $bordePrincipal;
+                    background-color:$colorfondoTabla;
+                    font-family: $fontPrincipal;
+                    font-size: 20px;
                 }
-
-                & &__thead {
-                    & &__tr {
-                        & &__th {
-                            border: 2px solid black;
-                            padding: 3px;
-                            background-color: white;
-                        }
-                    }
-                }
-
-            }
-        }
+                
+        }   
+        
 
             .lolo {
-                display: flex;
+                display:map-get( $estilos,flex);
 
                 .redesSociales {
-                    text-align: left;
+                    text-align: map-get($estilos, izquierda);
                     padding: 20px;
                 }
             }
@@ -177,13 +168,13 @@
 
         #pie {
             margin-top: 0px;
-            text-align: left;
+            text-align: map-get($estilos, izquierda);
             background: $colorPiedepagina;
             border-top: $bordePrincipal;
             grid-area: footer;
-            display: flex;
+            display:map-get( $estilos,flex);
             flex-direction: column;
-            align-items: left;
+            align-items: map-get($estilos, izquierda);;
         }
 
         .tienda {
@@ -191,12 +182,12 @@
             margin-bottom: 5px;
 
             .titulo {
-                text-align: left;
+                text-align: map-get($estilos, izquierda);
                 padding-top: 20px;
                 margin-left: 20px;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-family: $fontPrincipal;
                 text-decoration: underline;
-                color: rgb(68, 68, 189);
+                color: $colorTitulo;
             }
         }
     }
@@ -213,13 +204,11 @@
 
 
                 .lista {
-                    display: flex;
+                    display:map-get( $estilos,flex);
                     justify-content: space-around;
 
                     .menu {
-                        display: flex;
-                        justify-content: space-around;
-                        display: flex;
+                        @extend .lista;
                         padding: 2px;
                         margin: 5px;
                         font-size: 25px;
@@ -238,7 +227,7 @@
             }
 
             .texto {
-                text-align: center;
+                text-align: map-get($estilos, centro);
                 font-family: $fontPrincipal;
                 color: $colorTitulo;
                 font-size: 5px;
@@ -292,9 +281,9 @@
             .container {
 
                 .lista {
-                    display: flex;
+                    display:map-get( $estilos,flex);
                     flex-direction: column;
-                    align-items: left;
+                    align-items: map-get($estilos, izquierda);;
 
                     .menu {
                         justify-content: space-around;
@@ -316,7 +305,7 @@
             }
 
             .texto {
-                text-align: center;
+                text-align: map-get($estilos, centro);
                 font-family: $fontPrincipal;
                 color: $colorTitulo;
                 font-size: 10px;
@@ -328,9 +317,9 @@
 
 
                     .imagen {
-                        display: flex;
+                        display:map-get( $estilos,flex);
                         width: 90%;
-                        align-items: center;
+                        align-items: map-get($estilos, centro);;
                         padding-top: 20px;
                         margin: 5px;
                     }
@@ -358,6 +347,6 @@
 
 
         #pie {
-            align-items: center;
+            align-items: map-get($estilos, centro);;
         }
     }

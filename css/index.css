@@ -137,7 +137,25 @@ form div textarea {
     font-size: 20px;
 }
 
+.main section {
+    text-align: center;
+    display: table;
+    margin: 5px auto;
+    color: black;
+    background-color: rgb(68, 68, 189);
+}
 
+/* .main section .tabla tr td {
+    border: 2px solid black;
+    padding: 3px;
+    background-color: white;
+}
+
+.main section .tabla tr th {
+    border: 2px solid black;
+    padding: 3px;
+    background-color: white;
+} */
 
 
 .redesSociales {

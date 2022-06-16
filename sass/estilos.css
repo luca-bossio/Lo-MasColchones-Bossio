@@ -126,24 +126,6 @@
   font-size: 20px;
 }
 
-.grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__tbody .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__tbody__tr .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__tbody .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__tbody__tr__td {
-  border: 2px solid black;
-  padding: 3px;
-  background-color: white;
-}
-
-.grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__tbody .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__tbody__tr .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__tbody .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__tbody__tr__th {
-  border: 2px solid black;
-  padding: 3px;
-  background-color: white;
-}
-
-.grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__thead .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__thead__tr .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__thead .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table .grid-area .main .grid-area .main__section .grid-area .main .grid-area .main__section__table__thead__tr__th {
-  border: 2px solid black;
-  padding: 3px;
-  background-color: white;
-}
-
 .grid-area .main .lolo {
   display: -webkit-box;
   display: -ms-flexbox;
