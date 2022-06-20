@@ -1,9 +1,9 @@
 @import "_import";
 
 $estilos: (
-  centro: center,
-  izquierda: left,
-  flex:flex,
+    centro: center,
+    izquierda: left,
+    flex:flex,
 );
 
 
@@ -44,7 +44,7 @@ $estilos: (
                 list-style: none;
 
                 .menu {
-                    display:map-get( $estilos,flex);
+                    display: map-get($estilos, flex);
                     flex-direction: row;
                     margin: 20px;
                     border: $bordePrincipal;
@@ -63,7 +63,7 @@ $estilos: (
     }
 
     .main {
-        display:map-get( $estilos,flex);
+        display: map-get($estilos, flex);
         flex-direction: column;
         text-align: map-get($estilos, centro);
         grid-area: main;
@@ -79,7 +79,7 @@ $estilos: (
 
         .titulo {
             @extend .tituloPrincipal;
-            text-align: map-get($estilos, izquierda);         
+            text-align: map-get($estilos, izquierda);
         }
 
         .texto {
@@ -118,226 +118,230 @@ $estilos: (
             color: black;
             background-color: $colorTitulo;
 
-             & &__table {
-                    border-spacing:$bordePrincipal;
-                    border: $bordePrincipal;
-                    background-color:$colorfondoTabla;
-                    font-family: $fontPrincipal;
-                    font-size: 20px;
+            & &__table {
+                border-spacing: $bordePrincipal;
+                border: $bordePrincipal;
+                background-color: $colorfondoTabla;
+                font-family: $fontPrincipal;
+                font-size: 20px;
+            }
+
+        }
+
+
+        .lolo {
+            display: map-get($estilos, flex);
+
+            .redesSociales {
+                text-align: map-get($estilos, izquierda);
+                padding: 20px;
+            }
+        }
+
+        form {
+            & &__div {
+                margin: 10px;
+
+                & &__textarea {
+                    margin-left: 5px;
+                    margin-bottom: 5px;
                 }
-                
-        }   
-        
+            }
 
-            .lolo {
-                display:map-get( $estilos,flex);
+            .aclaraciones {
+                margin: 20px;
+                margin-bottom: 5px;
+            }
 
-                .redesSociales {
-                    text-align: map-get($estilos, izquierda);
+        }
+
+    }
+
+    #pie {
+        margin-top: 0px;
+        text-align: map-get($estilos, izquierda);
+        background: $colorPiedepagina;
+        border-top: $bordePrincipal;
+        grid-area: footer;
+        display: map-get($estilos, flex);
+        flex-direction: column;
+        align-items: map-get($estilos, izquierda);
+        ;
+    }
+
+    .tienda {
+        margin: 10px;
+        margin-bottom: 5px;
+
+        .titulo {
+            text-align: map-get($estilos, izquierda);
+            padding-top: 20px;
+            margin-left: 20px;
+            font-family: $fontPrincipal;
+            text-decoration: underline;
+            color: $colorTitulo;
+        }
+    }
+}
+
+@media (max-width: $tamanoTablet) {
+
+    nav {
+
+        & &__img {
+            width: 40%;
+        }
+
+        .container {
+
+
+            .lista {
+                display: map-get($estilos, flex);
+                justify-content: space-around;
+
+                .menu {
+                    @extend .lista;
+                    padding: 2px;
+                    margin: 5px;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+
+    .main {
+        padding-bottom: 200px;
+
+        .titulo {
+            font-size: 40px;
+            margin-left: 5px;
+        }
+
+        .texto {
+            text-align: map-get($estilos, centro);
+            font-family: $fontPrincipal;
+            color: $colorTitulo;
+            font-size: 5px;
+        }
+
+        .container {
+
+            .carousel slide {
+
+                .imagen {
+                    margin: auto;
+                    width: 100%;
                     padding: 20px;
                 }
             }
 
-            form {
-                & &__div {
-                    margin: 10px;
 
-                    & &__textarea {
-                        margin-left: 5px;
-                        margin-bottom: 5px;
+        }
+
+        .lolo {
+            .redesSociales {
+                & &__li {
+                    font-size: 20px;
+
+                    & &__img {
+                        width: 5%;
                     }
                 }
-
-                .aclaraciones {
-                    margin: 20px;
-                    margin-bottom: 5px;
-                }
-
             }
 
-        }
-
-        #pie {
-            margin-top: 0px;
-            text-align: map-get($estilos, izquierda);
-            background: $colorPiedepagina;
-            border-top: $bordePrincipal;
-            grid-area: footer;
-            display:map-get( $estilos,flex);
-            flex-direction: column;
-            align-items: map-get($estilos, izquierda);;
-        }
-
-        .tienda {
-            margin: 10px;
-            margin-bottom: 5px;
-
-            .titulo {
-                text-align: map-get($estilos, izquierda);
-                padding-top: 20px;
-                margin-left: 20px;
-                font-family: $fontPrincipal;
-                text-decoration: underline;
-                color: $colorTitulo;
-            }
         }
     }
 
-    @media (max-width: $tamanoTablet) {
+    #pie {
+        font-size: 15px;
+    }
 
-        nav {
+}
 
-            & &__img {
-                width: 40%;
-            }
+@media (max-width: $tamanoMobile ) {
+    nav {
 
-            .container {
+        & &__img {
+            width: 100%;
+        }
 
+        & &__div img {
+            width: 50%;
+        }
 
-                .lista {
-                    display:map-get( $estilos,flex);
+        .container {
+
+            .lista {
+                display: map-get($estilos, flex);
+                flex-direction: column;
+                align-items: map-get($estilos, izquierda);
+                ;
+
+                .menu {
                     justify-content: space-around;
-
-                    .menu {
-                        @extend .lista;
-                        padding: 2px;
-                        margin: 5px;
-                        font-size: 25px;
-                    }
-                }
-            }
-        }
-
-
-        .main {
-            padding-bottom: 200px;
-
-            .titulo {
-                font-size: 40px;
-                margin-left: 5px;
-            }
-
-            .texto {
-                text-align: map-get($estilos, centro);
-                font-family: $fontPrincipal;
-                color: $colorTitulo;
-                font-size: 5px;
-            }
-
-            .container {
-
-                .carousel slide {
-
-                    .imagen {
-                        margin: auto;
-                        width: 100%;
-                        padding: 20px;
-                    }
-                }
-
-
-            }
-
-            .lolo {
-                .redesSociales {
-                    & &__li {
-                        font-size: 20px;
-
-                        & &__img {
-                            width: 5%;
-                        }
-                    }
-                }
-
-            }
-        }
-
-        #pie {
-            font-size: 15px;
-        }
-
-    }
-
-    @media (max-width: $tamanoMobile ) {
-        nav {
-
-            & &__img {
-                width: 100%;
-            }
-
-            & &__div img {
-                width: 50%;
-            }
-
-            .container {
-
-                .lista {
-                    display:map-get( $estilos,flex);
                     flex-direction: column;
-                    align-items: map-get($estilos, izquierda);;
-
-                    .menu {
-                        justify-content: space-around;
-                        flex-direction: column;
-                        padding: 0px;
-                        margin: 0px;
-                        font-size: 15px;
-                    }
+                    padding: 0px;
+                    margin: 0px;
+                    font-size: 15px;
                 }
             }
-        }
-
-        .main {
-            padding-bottom: 100px;
-
-            .titulo {
-                font-size: 30px;
-                margin-left: 5px;
-            }
-
-            .texto {
-                text-align: map-get($estilos, centro);
-                font-family: $fontPrincipal;
-                color: $colorTitulo;
-                font-size: 10px;
-            }
-
-            .container {
-
-                .carousel slide {
-
-
-                    .imagen {
-                        display:map-get( $estilos,flex);
-                        width: 90%;
-                        align-items: map-get($estilos, centro);;
-                        padding-top: 20px;
-                        margin: 5px;
-                    }
-                }
-            }
-
-            .subtitulo {
-                padding-top: 10px;
-            }
-
-            .lolo {
-                .redesSociales {
-                    & &__li {
-                        font-size: 25px;
-
-                        & &__img {
-                            width: 10%;
-                        }
-                    }
-                }
-
-            }
-
-        }
-
-
-        #pie {
-            align-items: map-get($estilos, centro);;
         }
     }
+
+    .main {
+        padding-bottom: 100px;
+
+        .titulo {
+            font-size: 30px;
+            margin-left: 5px;
+        }
+
+        .texto {
+            text-align: map-get($estilos, centro);
+            font-family: $fontPrincipal;
+            color: $colorTitulo;
+            font-size: 10px;
+        }
+
+        .container {
+
+            .carousel slide {
+
+
+                .imagen {
+                    display: map-get($estilos, flex);
+                    width: 90%;
+                    align-items: map-get($estilos, centro);
+                    ;
+                    padding-top: 20px;
+                    margin: 5px;
+                }
+            }
+        }
+
+        .subtitulo {
+            padding-top: 10px;
+        }
+
+        .lolo {
+            .redesSociales {
+                & &__li {
+                    font-size: 25px;
+
+                    & &__img {
+                        width: 10%;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
+    #pie {
+        align-items: map-get($estilos, centro);
+        ;
+    }
+}
