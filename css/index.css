@@ -79,7 +79,6 @@ nav {
 .main {
     display: flex;
     flex-direction: column;
-    /* padding-bottom: 400px; */
     text-align: center;
     grid-area: main;
 }
