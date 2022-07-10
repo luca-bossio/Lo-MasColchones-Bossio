@@ -129,12 +129,9 @@ form div textarea {
 
 
 
-.Tabla {
-    border-spacing: 2px solid black;
+.tabla {
+    border-spacing: 2px;
     border: 3px solid black;
-    background-color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
 }
 
 .main section {
@@ -142,10 +139,10 @@ form div textarea {
     display: table;
     margin: 5px auto;
     color: black;
-    background-color: rgb(68, 68, 189);
+
 }
 
-/* .main section .tabla tr td {
+.main section .tabla tr td {
     border: 2px solid black;
     padding: 3px;
     background-color: white;
@@ -155,7 +152,7 @@ form div textarea {
     border: 2px solid black;
     padding: 3px;
     background-color: white;
-} */
+}
 
 
 .redesSociales {

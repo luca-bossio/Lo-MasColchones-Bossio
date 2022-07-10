@@ -118,12 +118,24 @@ $estilos: (
             color: black;
             background-color: $colorTitulo;
 
-            & &__table {
-                border-spacing: $bordePrincipal;
-                border: $bordePrincipal;
-                background-color: $colorfondoTabla;
-                font-family: $fontPrincipal;
-                font-size: 20px;
+            .tabla {
+                border-spacing: 2px;
+                border: 3px solid black;
+
+                & &__tr td {
+                    border: 2px solid black;
+                    padding: 3px;
+                    background-color: white;
+                }
+
+                & &__tr th {
+                    border: 2px solid black;
+                    padding: 3px;
+                    background-color: white;
+                }
+            }
+
+
             }
 
         }
@@ -139,8 +151,13 @@ $estilos: (
         }
 
         form {
+
             & &__div {
                 margin: 10px;
+
+                & &__label {
+                    text-align: left;
+                }
 
                 & &__textarea {
                     margin-left: 5px;
@@ -182,7 +199,7 @@ $estilos: (
             color: $colorTitulo;
         }
     }
-}
+
 
 @media (max-width: $tamanoTablet) {
 
